@@ -1,0 +1,300 @@
+// 레이아웃
+
+#mNav {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 14px;
+}
+
+#header {
+  width: 100%;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+#banner {
+  position: relative;
+}
+
+// 가운데 영역
+
+.container {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+// 모바일 메뉴
+.ham {
+  display: block;
+  width: 25px;
+  height: 10px;
+
+  span {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 4px;
+    background: #39106a;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 4px;
+      background-color: #39106a;
+      left: 0;
+      bottom: -7px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 4px;
+      background-color: #39106a;
+      left: 0;
+      top: -7px;
+    }
+  }
+}
+
+// 로우 영역
+
+.row {
+  padding: 0 28px;
+}
+
+// 헤더 영역
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    em {
+      padding: 15px 8px 5px 0;
+      display: inline-block;
+
+      img {
+        width: 155px;
+      }
+    }
+
+    strong {
+      display: block;
+      position: absolute;
+      left: 194px;
+      top: 22px;
+
+      img {
+        width: 157px;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      border-left: 1px solid #c6c6c6;
+      display: flex;
+
+      li {
+        width: 103px;
+        text-align: center;
+        border-right: 1px solid #c6c6c6;
+
+        a {
+          display: block;
+          padding: 19px 10px;
+          font-size: 17px;
+          font-weight: 700;
+          color: #444;
+        }
+      }
+    }
+  }
+}
+
+// 배너
+.bannerMenu {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+
+  a {
+    color: #fff;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #c1c1c1;
+    }
+  }
+
+  .container {
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .line {
+        margin-right: 30px;
+
+        &::after {
+          content: "";
+          width: 1px;
+          height: 14px;
+          background: #fff;
+          position: absolute;
+          right: -18px;
+          top: 2px;
+        }
+      }
+
+      .bmLeft {
+        ul {
+          li {
+            position: relative;
+            display: inline;
+            margin-right: 30px;
+          }
+
+          .total {
+            margin-right: 20px;
+
+            a {
+              font-size: 14px;
+              padding: 3px 10px;
+              display: inline-block;
+              border: 1px solid #fff;
+              transition: all 0.3s;
+
+              &:hover {
+                background-color: #fff;
+                border-color: #000;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+
+      .bmRight {
+        display: flex;
+
+        ul {
+          li {
+            position: relative;
+            display: inline;
+            text-align: center;
+            margin-right: 20px;
+          }
+
+          .white {
+            margin-right: 10px;
+
+            a {
+              width: 80px;
+              background-color: #fff;
+              color: #3a0e6a;
+              padding: 7px 30px 9px 30px;
+              border: 1px solid #fff;
+              display: inline;
+            }
+          }
+
+          .purple {
+            margin-right: 0;
+
+            a {
+              width: 80px;
+              background-color: #3a0e6a;
+              color: #fff;
+              padding: 7px 30px 9px 30px;
+              border: 1px solid #6e40c4;
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 미디어쿼리
+
+@media (max-width: 1290px) {
+  .container {
+    width: 100%;
+  }
+
+  .header .nav ul li {
+    width: 93px;
+
+    a {
+      font-size: 15px;
+      padding: 17px 10px;
+    }
+  }
+
+  .header h1 {
+    em {
+      padding: 11px 8px 5px 0;
+    }
+
+    strong {
+      top: 19px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #mNav {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .row {
+    padding: 0 24px;
+  }
+
+  .header {
+    justify-content: center;
+
+    h1 {
+      strong {
+        left: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {}
+
+@media (max-width: 768px) {
+  .row {
+    padding: 0 16px;
+  }
+
+  #mNav {
+    right: 6px;
+  }
+
+  .header {
+    justify-content: left;
+
+    h1 {
+      strong {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 320px) {}

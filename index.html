@@ -19,8 +19,8 @@
     <title>메가박스 사이트 코딩하기</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/reset01.css" />
-    <link rel="stylesheet" href="assets/css/style01.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="assets/icons/favicon.ico" />
@@ -75,6 +75,14 @@
       content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다."
     />
 
+    <!-- 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" 교차 출처 />
+    <link
+      href="https: //fonts.googleapis.com/css2? family= Noto+Sans+KR:wght@100;300;400;500;700;900 & display=swap"
+      rel="stylesheet"
+    />
+
     <!-- HTLM5shiv ie6~8 -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.min.js"></script>
@@ -85,7 +93,73 @@
       </script>
     <![endif]-->
   </head>
+
   <body>
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="header">
+            <h1>
+              <a href="#">
+                <em><img src="./assets/img/logo.png" alt="MEGABOX" /></em>
+                <strong
+                  ><img src="./assets/img/logo-sub.png" alt="LTFE THEATER"
+                /></strong>
+              </a>
+            </h1>
+            <nav id="mNav">
+              <h2 class="ir_su">메가박스 전체메뉴</h2>
+              <a href="#" class="ham"><span></span></a>
+            </nav>
+            <nav class="nav">
+              <ul>
+                <li><a href="#">영화</a></li>
+                <li><a href="#">큐레이션</a></li>
+                <li><a href="#">영화관</a></li>
+                <li><a href="#">특별관</a></li>
+                <li><a href="#">스토어</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">로그인</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- //header -->
+        </div>
+      </div>
+    </header>
+
+    <section id="banner">
+      <h2 class="ir_su">최신 영화 소식</h2>
+      <div class="bannerMenu">
+        <div class="container">
+          <div class="row">
+            <div class="bmLeft">
+              <ul>
+                <li class="total"><a href="#">전체메뉴</a></li>
+                <li class="line"><a href="#">필름 소사이어티</a></li>
+                <li><a href="#">클래식 소사이어티</a></li>
+              </ul>
+            </div>
+            <div class="bmRight">
+              <ul>
+                <li class="line"><a href="#">고객센터</a></li>
+                <li class="line"><a href="#">멤버쉽</a></li>
+                <li><a href="#">VIP</a></li>
+              </ul>
+              <ul>
+                <li class="white"><a href="#">상영시간표</a></li>
+                <li class="purple"><a href="#">빠른 예매</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <img src="./assets/img/main_slider01.jpg" alt="베스와 베라" />
+      </div>
+    </section>
+    <!-- //banner -->
+
     <!-- 자바스크립트 라이브러리 -->
     <script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/modernizr-custom.js"></script>
