@@ -298,121 +298,119 @@
   }
 
   .movieChart {
+    overflow: hidden;
     > div {
-      display: flex;
-      justify-content: space-between;
-
       > div {
-        display: inline-block;
-        width: 292px;
-        height: 592px;
-
-        // margin-right: 23px;
-        &:last-child {
-          // margin-right: 0;
-        }
-
-        // border: 1px solid #c4c4c4;
-        .poster {
-          position: relative;
-
-          img {
-            display: block;
-          }
-
-          .rank {
-            position: absolute;
-            top: 17px;
-            left: 0;
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-            background-color: #38116a;
-            text-align: center;
-            font-size: 22px;
-            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-
-            strong {
-              color: #fff;
-              text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
-            }
-          }
-
-          .mx {
-            position: absolute;
-            top: 17px;
-            right: 17px;
-
-            span {
-              width: 103px;
-              height: 25px;
+        display: flex;
+        justify-content: space-between;
+  
+        > div {
+          display: inline-block;
+          width: 292px;
+          height: 592px;
+  
+          .poster {
+            position: relative;
+  
+            img {
               display: block;
             }
-
-            .m {
-              background-position: 0 -75px;
+  
+            .rank {
+              position: absolute;
+              top: 17px;
+              left: 0;
+              width: 50px;
+              height: 50px;
+              line-height: 50px;
+              background-color: #38116a;
+              text-align: center;
+              font-size: 22px;
+              box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+  
+              strong {
+                color: #fff;
+                text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+              }
             }
-
-            .b {
-              background-position: 0 -100px;
-            }
-          }
-        }
-
-        .infor {
-          background-color: #fff;
-          padding: 17px;
-          border: 1px solid #d9d9d9;
-
-          h3 {
-            color: #333;
-            font-size: 30px;
-            font-weight: 700;
-            margin-bottom: 20px;
-
-            strong {
-            }
-
-            span {
-              width: 29px;
-              height: 29px;
-              display: inline-block;
-              margin-top: 9px;
-              background-color: #ccc;
-              vertical-align: -2px;
-            }
-
-            span.all {
-              background-position: -87px -125px;
-            }
-
-            span.a12 {
-              background-position: -58px -125px;
-            }
-
-            span.a15 {
-              background-position: 0px -125px;
-            }
-
-            span.a19 {
-              background-position: -29px -125px;
+  
+            .mx {
+              position: absolute;
+              top: 17px;
+              right: 17px;
+  
+              span {
+                width: 103px;
+                height: 25px;
+                display: block;
+              }
+  
+              .m {
+                background-position: 0 -75px;
+              }
+  
+              .b {
+                background-position: 0 -100px;
+              }
             }
           }
-
-          .inforBtn {
-            display: flex;
-            justify-content: space-between;
-
-            a {
-              display: inline-block;
-              background-color: #f2f2f2;
-              font-size: 18px;
-              padding: 15px 26px;
+  
+          .infor {
+            background-color: #fff;
+            padding: 17px;
+            border: 1px solid #d9d9d9;
+  
+            h3 {
+              color: #333;
+              font-size: 30px;
+              font-weight: 700;
+              margin-bottom: 20px;
+  
+              strong {
+              }
+  
+              span {
+                width: 29px;
+                height: 29px;
+                display: inline-block;
+                margin-top: 9px;
+                background-color: #ccc;
+                vertical-align: -2px;
+              }
+  
+              span.all {
+                background-position: -87px -125px;
+              }
+  
+              span.a12 {
+                background-position: -58px -125px;
+              }
+  
+              span.a15 {
+                background-position: 0px -125px;
+              }
+  
+              span.a19 {
+                background-position: -29px -125px;
+              }
+            }
+  
+            .inforBtn {
+              display: flex;
+              justify-content: space-between;
+  
+              a {
+                display: inline-block;
+                background-color: #f2f2f2;
+                font-size: 18px;
+                padding: 15px 26px;
+              }
             }
           }
         }
       }
     }
+    
   }
 }
 

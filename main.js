@@ -12,6 +12,12 @@ var swiper = new Swiper(".swiper-container", {
   },
 });
 
+// 영화차트 이미지 슬라이드
+var swiper = new Swiper(".swiper-container2", {
+  slidesPerView: 4, // 한 번에 보여줄 슬라이드 개수
+  spaceBetween: 24,
+});
+
 // 영화차트 탭 메뉴
 
 const movBtn = $(".movieTitle > ul > li");

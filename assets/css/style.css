@@ -234,22 +234,25 @@
   background-color: #666;
   color: #fff;
 }
-.movie .movieChart > div {
+.movie .movieChart {
+  overflow: hidden;
+}
+.movie .movieChart > div > div {
   display: flex;
   justify-content: space-between;
 }
-.movie .movieChart > div > div {
+.movie .movieChart > div > div > div {
   display: inline-block;
   width: 292px;
   height: 592px;
 }
-.movie .movieChart > div > div .poster {
+.movie .movieChart > div > div > div .poster {
   position: relative;
 }
-.movie .movieChart > div > div .poster img {
+.movie .movieChart > div > div > div .poster img {
   display: block;
 }
-.movie .movieChart > div > div .poster .rank {
+.movie .movieChart > div > div > div .poster .rank {
   position: absolute;
   top: 17px;
   left: 0;
@@ -261,38 +264,38 @@
   font-size: 22px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
-.movie .movieChart > div > div .poster .rank strong {
+.movie .movieChart > div > div > div .poster .rank strong {
   color: #fff;
   text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
-.movie .movieChart > div > div .poster .mx {
+.movie .movieChart > div > div > div .poster .mx {
   position: absolute;
   top: 17px;
   right: 17px;
 }
-.movie .movieChart > div > div .poster .mx span {
+.movie .movieChart > div > div > div .poster .mx span {
   width: 103px;
   height: 25px;
   display: block;
 }
-.movie .movieChart > div > div .poster .mx .m {
+.movie .movieChart > div > div > div .poster .mx .m {
   background-position: 0 -75px;
 }
-.movie .movieChart > div > div .poster .mx .b {
+.movie .movieChart > div > div > div .poster .mx .b {
   background-position: 0 -100px;
 }
-.movie .movieChart > div > div .infor {
+.movie .movieChart > div > div > div .infor {
   background-color: #fff;
   padding: 17px;
   border: 1px solid #d9d9d9;
 }
-.movie .movieChart > div > div .infor h3 {
+.movie .movieChart > div > div > div .infor h3 {
   color: #333;
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.movie .movieChart > div > div .infor h3 span {
+.movie .movieChart > div > div > div .infor h3 span {
   width: 29px;
   height: 29px;
   display: inline-block;
@@ -300,23 +303,23 @@
   background-color: #ccc;
   vertical-align: -2px;
 }
-.movie .movieChart > div > div .infor h3 span.all {
+.movie .movieChart > div > div > div .infor h3 span.all {
   background-position: -87px -125px;
 }
-.movie .movieChart > div > div .infor h3 span.a12 {
+.movie .movieChart > div > div > div .infor h3 span.a12 {
   background-position: -58px -125px;
 }
-.movie .movieChart > div > div .infor h3 span.a15 {
+.movie .movieChart > div > div > div .infor h3 span.a15 {
   background-position: 0px -125px;
 }
-.movie .movieChart > div > div .infor h3 span.a19 {
+.movie .movieChart > div > div > div .infor h3 span.a19 {
   background-position: -29px -125px;
 }
-.movie .movieChart > div > div .infor .inforBtn {
+.movie .movieChart > div > div > div .infor .inforBtn {
   display: flex;
   justify-content: space-between;
 }
-.movie .movieChart > div > div .infor .inforBtn a {
+.movie .movieChart > div > div > div .infor .inforBtn a {
   display: inline-block;
   background-color: #f2f2f2;
   font-size: 18px;
