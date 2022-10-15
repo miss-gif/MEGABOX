@@ -230,14 +230,16 @@
 
   .swiper-slide {
     .container {
-      .row {        
+      .row {
         h3 {
-        font-size: 62px;
-        color: #fff;margin-top: 200px;
+          font-size: 62px;
+          color: #fff;
+          margin-top: 200px;
         }
+
         p {
-        font-size: 20px;
-        color: #fff;
+          font-size: 20px;
+          color: #fff;
         }
       }
     }
@@ -261,18 +263,22 @@
 
 // 무비
 .movie {
-   padding: 100px 0;
+  padding: 100px 0;
+
   .movieTitle {
     margin-bottom: 60px;
+
     ul {
       display: flex;
       width: 848px;
       margin: 0 auto;
+
       li {
         width: 210px;
         text-align: center;
         border: 1px solid #c4c4c4;
         margin-left: -1px;
+
         a {
           display: block;
           padding: 15px 0;
@@ -280,8 +286,8 @@
           color: 666px;
           font-weight: 700;
         }
-
       }
+
       li.active {
         a {
           background-color: #666;
@@ -290,18 +296,30 @@
       }
     }
   }
+
   .movieChart {
-    >div {
-      >div {
+    > div {
+      display: flex;
+      justify-content: space-between;
+
+      > div {
         display: inline-block;
         width: 292px;
         height: 592px;
+
+        // margin-right: 23px;
+        &:last-child {
+          // margin-right: 0;
+        }
+
         // border: 1px solid #c4c4c4;
         .poster {
           position: relative;
+
           img {
             display: block;
           }
+
           .rank {
             position: absolute;
             top: 17px;
@@ -311,32 +329,82 @@
             line-height: 50px;
             background-color: #38116a;
             text-align: center;
+
             strong {
               color: #fff;
             }
           }
+
           .mx {
             position: absolute;
             top: 17px;
             right: 17px;
+
+            span {
+              width: 103px;
+              height: 25px;
+              display: block;
+            }
+
+            .m {
+              background-position: 0 -75px;
+            }
+
+            .b {
+              background-position: 0 -100px;
+            }
           }
         }
+
         .infor {
           background-color: #fff;
           padding: 17px;
           border: 1px solid #d9d9d9;
+
           h3 {
             color: #333;
             font-size: 30px;
             font-weight: 700;
             margin-bottom: 20px;
-            strong {}
+
+            strong {
+            }
+
             span {
               width: 29px;
               height: 29px;
               display: inline-block;
               margin-top: 9px;
               background-color: #ccc;
+              vertical-align: -2px;
+            }
+
+            span.all {
+              background-position: -87px -125px;
+            }
+
+            span.a12 {
+              background-position: -58px -125px;
+            }
+
+            span.a15 {
+              background-position: 0px -125px;
+            }
+
+            span.a19 {
+              background-position: -29px -125px;
+            }
+          }
+
+          .inforBtn {
+            display: flex;
+            justify-content: space-between;
+
+            a {
+              display: inline-block;
+              background-color: #f2f2f2;
+              font-size: 18px;
+              padding: 15px 26px;
             }
           }
         }
@@ -371,7 +439,8 @@
     }
   }
 
-  .swiper-button-prev, .swiper-button-next {
+  .swiper-button-prev,
+  .swiper-button-next {
     display: none;
   }
 }
