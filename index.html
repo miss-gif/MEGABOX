@@ -21,6 +21,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.css" />
 
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="assets/icons/favicon.ico" />
@@ -155,7 +156,37 @@
         </div>
       </div>
       <div class="slider">
-        <img src="./assets/img/main_slider01.jpg" alt="베스와 베라" />
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ss1">
+              <div class="container">
+                <div class="row">
+                  <h3>어벤져스 : 앤드게임</h3>
+                  <p>역대 최단 기간 1000만 관객 돌파 기록</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide ss2">
+              <div class="container">
+                <div class="row">
+                  <h3>어벤져스 : 앤드게임</h3>
+                  <p>역대 최단 기간 1000만 관객 돌파 기록</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide ss3">
+              <div class="container">
+                <div class="row">
+                  <h3>어벤져스 : 앤드게임</h3>
+                  <p>역대 최단 기간 1000만 관객 돌파 기록</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
     </section>
     <!-- //banner -->
@@ -164,5 +195,20 @@
     <script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/modernizr-custom.js"></script>
     <script src="assets/js/ie-checker.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 5000,
+        },
+      });
+    </script>
   </body>
 </html>
