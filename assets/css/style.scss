@@ -278,6 +278,7 @@
         text-align: center;
         border: 1px solid #c4c4c4;
         margin-left: -1px;
+        // display: none;
 
         a {
           display: block;
@@ -487,6 +488,17 @@
 }
 
 @media (max-width: 960px) {
+  .movie {
+    .movieTitle {
+      ul {
+        width: auto;
+        li {
+          width: 25%;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
