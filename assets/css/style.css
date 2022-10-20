@@ -244,7 +244,6 @@
 .movie .movieChart > div > div > div {
   display: inline-block;
   width: 292px;
-  height: 592px;
 }
 .movie .movieChart > div > div > div .poster {
   position: relative;
@@ -320,10 +319,13 @@
   justify-content: space-between;
 }
 .movie .movieChart > div > div > div .infor .inforBtn a {
-  display: inline-block;
-  background-color: #f2f2f2;
+  width: 49%;
+  margin-right: 2%;
+  text-align: center;
+  background: #f2f2f2;
   font-size: 18px;
-  padding: 15px 26px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1290px) {
@@ -381,16 +383,160 @@
   }
 }
 @media (max-width: 768px) {
-  .row {
-    padding: 0 16px;
+  body {
+    background-color: #d9d7e0;
   }
-  #mNav {
-    right: 6px;
+  body .row {
+    padding: 0 16px;
   }
   .header {
     justify-content: left;
   }
   .header h1 strong {
     display: none;
+  }
+  .header #mNav {
+    right: 6px;
+  }
+  #movie .container > .row {
+    background-color: #fff;
+    margin: 24px;
+    padding: 24px;
+  }
+  #movie .container .movie {
+    padding: 0;
+  }
+  #movie .container .movie > .ir_su {
+    position: static;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    text-indent: 0;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  #movie .container .movie .movieTitle {
+    margin-bottom: 30px;
+  }
+  #movie .container .movie .movieTitle ul {
+    position: relative;
+    padding-bottom: 10px;
+  }
+  #movie .container .movie .movieTitle ul::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e1e1e1;
+  }
+  #movie .container .movie .movieTitle ul li {
+    width: auto;
+    border: 0;
+  }
+  #movie .container .movie .movieTitle ul li a {
+    position: relative;
+    font-size: 18px;
+    color: #666;
+    padding: 0;
+    margin-right: 35px;
+  }
+  #movie .container .movie .movieTitle ul li.active a {
+    background-color: transparent;
+    color: #666;
+  }
+  #movie .container .movie .movieTitle ul li.active a::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: #666;
+  }
+  #movie .container .movie .movieChart .swiper-container2 .chartCont1 .swiper-slide .infor {
+    padding: 5px;
+  }
+  #movie .container .movie .movieChart .swiper-container2 .chartCont1 .swiper-slide .infor h3 {
+    text-align: center;
+    margin: 5px 0 10px;
+  }
+  #movie .container .movie .movieChart .swiper-container2 .chartCont1 .swiper-slide .infor h3 span {
+    display: none;
+  }
+  #movie .container .movie .movieChart .swiper-container2 .chartCont1 .swiper-slide .infor h3 strong {
+    display: block;
+    font-size: 19px;
+    color: #222;
+    font-weight: 300;
+  }
+  #movie .container .movie .movieChart .swiper-container2 .chartCont1 .swiper-slide .infor .inforBtn a {
+    width: 52%;
+    margin-left: 24px;
+    display: block;
+    margin-right: 0;
+    color: #777;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+  }
+  #movie .container .movie .movieChart .swiper-container2 .chartCont1 .swiper-slide .infor .inforBtn a:last-child {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .slider {
+    height: 400px;
+  }
+  .slider .swiper-slide h2 {
+    margin-top: 140px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .slider .swiper-slide h2::after {
+    bottom: -5px;
+  }
+  .slider .swiper-slide h2 em {
+    font-size: 14px;
+    padding-top: 25px;
+  }
+  .slider .swiper-slide p {
+    font-size: 14px;
+    padding-top: 25px;
+  }
+  .bannerMenu {
+    top: 16px;
+  }
+  .bannerMenu .bmRight li.white a {
+    font-size: 14px;
+    padding: 3px 5px 5px 5px;
+  }
+  .bannerMenu .bmRight li.purple a {
+    font-size: 14px;
+    padding: 3px 5px 5px 5px;
+  }
+  #movie .container .row {
+    margin: 8px;
+    padding: 16px;
+  }
+  #movie .container .row .movie .ir_su {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  #movie .container .row .movie .movieTitle ul {
+    padding-bottom: 8px;
+  }
+  #movie .container .row .movie .movieTitle ul li a {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  #movie .container .row .movie .movieTitle ul li.active a::before {
+    bottom: -8px;
   }
 }/*# sourceMappingURL=style.css.map */
