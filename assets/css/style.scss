@@ -1,3 +1,7 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 // 레이아웃
 
 #mNav {
@@ -15,6 +19,12 @@
 #banner {
   position: relative;
 }
+
+#movie {
+  background-color: #f8f8f8;
+}
+
+#event {}
 
 // 가운데 영역
 
@@ -301,12 +311,12 @@
   .movieChart {
     overflow: hidden;
 
-    > div {
-      > div {
+    >div {
+      >div {
         display: flex;
         justify-content: space-between;
 
-        > div {
+        >div {
           display: inline-block;
           width: 292px;
 
@@ -367,8 +377,7 @@
               font-weight: 700;
               margin-bottom: 20px;
 
-              strong {
-              }
+              strong {}
 
               span {
                 width: 29px;
@@ -411,6 +420,53 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+// 이벤트
+
+#event {
+  overflow: hidden;
+
+  .container {
+    .row {
+      .event {
+        display: flex;
+        position: relative;
+        padding-top: 100px;
+
+        img {
+          display: block;
+        }
+
+        h2 {
+          position: absolute;
+          top: 25px;
+          font-size: 30px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+
+        .eventLeft {
+          width: 66%;
+          margin-right: 2%;
+
+          .eventBox1 {
+            float: left;
+            width: 50%;
+          }
+
+          .eventBox2 {
+            float: left;
+            width: 50%;
+          }
+        }
+
+        .eventRight {
+          width: 32%;
         }
       }
     }
@@ -528,17 +584,19 @@
   }
 
   #movie {
+    background-color: transparent;
+
     .container {
-      > .row {
+      >.row {
         background-color: #fff;
-        margin: 24px;
+        margin: 24px 24px 0px 24px;
         padding: 24px;
       }
 
       .movie {
         padding: 0;
 
-        > .ir_su {
+        >.ir_su {
           position: static;
           width: auto;
           height: auto;
@@ -604,8 +662,7 @@
           .swiper-container2 {
             .chartCont1 {
               .swiper-slide {
-                .poster {
-                }
+                .poster {}
 
                 .infor {
                   padding: 5px;
@@ -647,6 +704,41 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  #event {
+    overflow: hidden;
+
+    .container {
+      .row {
+        padding: 24px;
+
+        .event {
+          padding: 80px 24px 0;
+          background-color: #fff;
+
+          img {}
+
+          h2 {
+            font-size: 24px;
+            font-weight: 700;
+          }
+
+          .eventLeft {
+            width: 100%;
+            margin-right: 0;
+
+            .eventBox1 {}
+
+            .eventBox2 {}
+          }
+
+          .eventRight {
+            display: none;
           }
         }
       }
@@ -737,10 +829,28 @@
       }
     }
   }
+
+  #event {
+    .container {
+      .row {
+        padding: 0 8px;
+
+        .event {
+          padding: 16px;
+
+          img {}
+
+          h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+
+        }
+      }
+    }
+  }
 }
 
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}
 
-@media (max-width: 320px) {
-}
+@media (max-width: 320px) {}

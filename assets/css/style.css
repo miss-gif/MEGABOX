@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 #mNav {
   display: none;
   position: absolute;
@@ -13,6 +17,10 @@
 
 #banner {
   position: relative;
+}
+
+#movie {
+  background-color: #f8f8f8;
 }
 
 .container {
@@ -328,6 +336,40 @@
   box-sizing: border-box;
 }
 
+#event {
+  overflow: hidden;
+}
+#event .container .row .event {
+  display: flex;
+  position: relative;
+  padding-top: 100px;
+}
+#event .container .row .event img {
+  display: block;
+}
+#event .container .row .event h2 {
+  position: absolute;
+  top: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#event .container .row .event .eventLeft {
+  width: 66%;
+  margin-right: 2%;
+}
+#event .container .row .event .eventLeft .eventBox1 {
+  float: left;
+  width: 50%;
+}
+#event .container .row .event .eventLeft .eventBox2 {
+  float: left;
+  width: 50%;
+}
+#event .container .row .event .eventRight {
+  width: 32%;
+}
+
 @media (max-width: 1290px) {
   .container {
     width: 100%;
@@ -398,9 +440,12 @@
   .header #mNav {
     right: 6px;
   }
+  #movie {
+    background-color: transparent;
+  }
   #movie .container > .row {
     background-color: #fff;
-    margin: 24px;
+    margin: 24px 24px 0px 24px;
     padding: 24px;
   }
   #movie .container .movie {
@@ -489,6 +534,27 @@
   #movie .container .movie .movieChart .swiper-container2 .chartCont1 .swiper-slide .infor .inforBtn a:last-child {
     display: none;
   }
+  #event {
+    overflow: hidden;
+  }
+  #event .container .row {
+    padding: 24px;
+  }
+  #event .container .row .event {
+    padding: 80px 24px 0;
+    background-color: #fff;
+  }
+  #event .container .row .event h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  #event .container .row .event .eventLeft {
+    width: 100%;
+    margin-right: 0;
+  }
+  #event .container .row .event .eventRight {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
   .slider {
@@ -538,5 +604,15 @@
   }
   #movie .container .row .movie .movieTitle ul li.active a::before {
     bottom: -8px;
+  }
+  #event .container .row {
+    padding: 0 8px;
+  }
+  #event .container .row .event {
+    padding: 16px;
+  }
+  #event .container .row .event h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
