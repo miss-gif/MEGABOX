@@ -6,13 +6,13 @@ body {
 #mNav {
   display: none;
   position: absolute;
-  top: 25px;
-  right: 14px;
+  top: 1.5625rem;
+  right: 0.875rem;
 }
 
 #header {
   width: 100%;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 0.0625rem solid #c6c6c6;
 }
 
 #banner {
@@ -28,48 +28,48 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 17px 0;
+  margin: 1.0625rem 0;
 }
 
 .container {
   position: relative;
-  width: 1280px;
+  width: 80rem;
   margin: 0 auto;
 }
 
 .ham {
   display: block;
-  width: 25px;
-  height: 10px;
+  width: 1.5625rem;
+  height: 0.625rem;
 }
 .ham span {
   position: relative;
   display: block;
-  width: 25px;
-  height: 4px;
+  width: 1.5625rem;
+  height: 0.25rem;
   background: #39106a;
 }
 .ham span::before {
   position: absolute;
   content: "";
-  width: 25px;
-  height: 4px;
+  width: 1.5625rem;
+  height: 0.25rem;
   background-color: #39106a;
   left: 0;
-  bottom: -7px;
+  bottom: -0.4375rem;
 }
 .ham span::after {
   position: absolute;
   content: "";
-  width: 25px;
-  height: 4px;
+  width: 1.5625rem;
+  height: 0.25rem;
   background-color: #39106a;
   left: 0;
-  top: -7px;
+  top: -0.4375rem;
 }
 
 .row {
-  padding: 0 28px;
+  padding: 0 1.75rem;
 }
 
 .header {
@@ -77,34 +77,34 @@ body {
   justify-content: space-between;
 }
 .header h1 em {
-  padding: 15px 8px 5px 0;
+  padding: 0.9375rem 0.5rem 0.3125rem 0;
   display: inline-block;
 }
 .header h1 em img {
-  width: 155px;
+  width: 9.6875rem;
 }
 .header h1 strong {
   display: block;
   position: absolute;
-  left: 194px;
-  top: 22px;
+  left: 12.125rem;
+  top: 1.375rem;
 }
 .header h1 strong img {
-  width: 157px;
+  width: 9.8125rem;
 }
 .header nav ul {
-  border-left: 1px solid #c6c6c6;
+  border-left: 0.0625rem solid #c6c6c6;
   display: flex;
 }
 .header nav ul li {
-  width: 103px;
+  width: 6.4375rem;
   text-align: center;
-  border-right: 1px solid #c6c6c6;
+  border-right: 0.0625rem solid #c6c6c6;
 }
 .header nav ul li a {
   display: block;
-  padding: 19px 10px;
-  font-size: 17px;
+  padding: 1.1875rem 0.625rem;
+  font-size: 1.0625rem;
   font-weight: 700;
   color: #444;
 }
@@ -112,7 +112,7 @@ body {
 .bannerMenu {
   position: absolute;
   left: 0;
-  top: 20px;
+  top: 1.25rem;
   width: 100%;
   z-index: 10;
 }
@@ -129,30 +129,30 @@ body {
   align-items: center;
 }
 .bannerMenu .container .row .line {
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 .bannerMenu .container .row .line::after {
   content: "";
-  width: 1px;
-  height: 14px;
+  width: 0.0625rem;
+  height: 0.875rem;
   background: #fff;
   position: absolute;
-  right: -18px;
-  top: 2px;
+  right: -1.125rem;
+  top: 0.125rem;
 }
 .bannerMenu .container .row .bmLeft ul li {
   position: relative;
   display: inline;
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 .bannerMenu .container .row .bmLeft ul .total {
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 .bannerMenu .container .row .bmLeft ul .total a {
-  font-size: 14px;
-  padding: 3px 10px;
+  font-size: 0.875rem;
+  padding: 0.1875rem 0.625rem;
   display: inline-block;
-  border: 1px solid #fff;
+  border: 0.0625rem solid #fff;
   transition: all 0.3s;
 }
 .bannerMenu .container .row .bmLeft ul .total a:hover {
@@ -167,43 +167,43 @@ body {
   position: relative;
   display: inline;
   text-align: center;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 .bannerMenu .container .row .bmRight ul .white {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .bannerMenu .container .row .bmRight ul .white a {
-  width: 80px;
+  width: 5rem;
   background-color: #fff;
   color: #3a0e6a;
-  padding: 7px 30px 9px 30px;
-  border: 1px solid #fff;
+  padding: 0.4375rem 1.875rem 0.5625rem 1.875rem;
+  border: 0.0625rem solid #fff;
   display: inline;
 }
 .bannerMenu .container .row .bmRight ul .purple {
   margin-right: 0;
 }
 .bannerMenu .container .row .bmRight ul .purple a {
-  width: 80px;
+  width: 5rem;
   background-color: #3a0e6a;
   color: #fff;
-  padding: 7px 30px 9px 30px;
-  border: 1px solid #6e40c4;
+  padding: 0.4375rem 1.875rem 0.5625rem 1.875rem;
+  border: 0.0625rem solid #6e40c4;
   display: inline;
 }
 
 /* 슬라이드 */
 .slider {
   width: 100%;
-  height: 600px;
+  height: 37.5rem;
 }
 .slider .swiper-slide .container .row h3 {
-  font-size: 62px;
+  font-size: 3.875rem;
   color: #fff;
-  margin-top: 200px;
+  margin-top: 12.5rem;
 }
 .slider .swiper-slide .container .row p {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
 }
 
@@ -223,27 +223,27 @@ body {
 }
 
 .movie {
-  padding: 100px 0;
+  padding: 6.25rem 0;
 }
 .movie .movieTitle {
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 .movie .movieTitle ul {
   display: flex;
-  width: 848px;
+  width: 53rem;
   margin: 0 auto;
 }
 .movie .movieTitle ul li {
-  width: 210px;
+  width: 13.125rem;
   text-align: center;
-  border: 1px solid #c4c4c4;
-  margin-left: -1px;
+  border: 0.0625rem solid #c4c4c4;
+  margin-left: -0.0625rem;
 }
 .movie .movieTitle ul li a {
   display: block;
-  padding: 15px 0;
-  font-size: 18px;
-  color: 666px;
+  padding: 0.9375rem 0;
+  font-size: 1.125rem;
+  color: 41.625rem;
   font-weight: 700;
 }
 .movie .movieTitle ul li.active a {
@@ -259,7 +259,7 @@ body {
 }
 .movie .movieChart > div > div > div {
   display: inline-block;
-  width: 292px;
+  width: 18.25rem;
 }
 .movie .movieChart > div > div > div .poster {
   position: relative;
@@ -269,66 +269,66 @@ body {
 }
 .movie .movieChart > div > div > div .poster .rank {
   position: absolute;
-  top: 17px;
+  top: 1.0625rem;
   left: 0;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
+  line-height: 3.125rem;
   background-color: #38116a;
   text-align: center;
-  font-size: 22px;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+  font-size: 1.375rem;
+  box-shadow: 0.1875rem 0.1875rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 .movie .movieChart > div > div > div .poster .rank strong {
   color: #fff;
-  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  text-shadow: 0.125rem 0.125rem 0.1875rem rgb(0, 0, 0);
 }
 .movie .movieChart > div > div > div .poster .mx {
   position: absolute;
-  top: 17px;
-  right: 17px;
+  top: 1.0625rem;
+  right: 1.0625rem;
 }
 .movie .movieChart > div > div > div .poster .mx span {
-  width: 103px;
-  height: 25px;
+  width: 6.4375rem;
+  height: 1.5625rem;
   display: block;
 }
 .movie .movieChart > div > div > div .poster .mx .m {
-  background-position: 0 -75px;
+  background-position: 0 -4.6875rem;
 }
 .movie .movieChart > div > div > div .poster .mx .b {
-  background-position: 0 -100px;
+  background-position: 0 -6.25rem;
 }
 .movie .movieChart > div > div > div .infor {
   background-color: #fff;
-  padding: 17px;
-  border: 1px solid #d9d9d9;
+  padding: 1.0625rem;
+  border: 0.0625rem solid #d9d9d9;
 }
 .movie .movieChart > div > div > div .infor h3 {
   color: #333;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .movie .movieChart > div > div > div .infor h3 span {
-  width: 29px;
-  height: 29px;
+  width: 1.8125rem;
+  height: 1.8125rem;
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 0.5625rem;
   background-color: #ccc;
-  vertical-align: -2px;
+  vertical-align: -0.125rem;
 }
 .movie .movieChart > div > div > div .infor h3 span.all {
-  background-position: -87px -125px;
+  background-position: -5.4375rem -7.8125rem;
 }
 .movie .movieChart > div > div > div .infor h3 span.a12 {
-  background-position: -58px -125px;
+  background-position: -3.625rem -7.8125rem;
 }
 .movie .movieChart > div > div > div .infor h3 span.a15 {
-  background-position: 0px -125px;
+  background-position: 0rem -7.8125rem;
 }
 .movie .movieChart > div > div > div .infor h3 span.a19 {
-  background-position: -29px -125px;
+  background-position: -1.8125rem -7.8125rem;
 }
 .movie .movieChart > div > div > div .infor .inforBtn {
   display: flex;
@@ -339,8 +339,8 @@ body {
   margin-right: 2%;
   text-align: center;
   background: #f2f2f2;
-  font-size: 18px;
-  padding: 15px;
+  font-size: 1.125rem;
+  padding: 0.9375rem;
   box-sizing: border-box;
 }
 
@@ -350,17 +350,17 @@ body {
 #event .container .row .event {
   display: flex;
   position: relative;
-  padding-top: 100px;
+  padding-top: 6.25rem;
 }
 #event .container .row .event img {
   display: block;
 }
 #event .container .row .event h2 {
   position: absolute;
-  top: 25px;
-  font-size: 30px;
+  top: 1.5625rem;
+  font-size: 1.875rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 #event .container .row .event .eventLeft {
   width: 66%;
@@ -379,26 +379,26 @@ body {
 }
 
 .opening {
-  padding: 100px 0;
+  padding: 6.25rem 0;
   text-align: center;
   color: #bb9b51;
 }
 .opening h2 span.grand {
-  background-position: 0 -175px;
+  background-position: 0 -10.9375rem;
   display: inline-block;
-  width: 330px;
-  height: 50px;
+  width: 20.625rem;
+  height: 3.125rem;
 }
 .opening strong.date {
-  background-position: 0 -225px;
+  background-position: 0 -14.0625rem;
   display: inline-block;
-  width: 260px;
-  height: 45px;
+  width: 16.25rem;
+  height: 2.8125rem;
 }
 .opening p.desc {
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: 300;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   background: url(../img/bar.png) no-repeat bottom center;
   background-size: 100%;
 }
@@ -411,6 +411,8 @@ body {
 }
 .opening .openBox > div h3 {
   color: #fff;
-  border: 1px solid #6e3abb;
-  font-size: 19px;
+  border: 0.0625rem solid #6e3abb;
+  font-size: 1.1875rem;
+  padding: 0.625rem 1.25rem;
+  background-color: #551e9b;
 }/*# sourceMappingURL=style.css.map */
