@@ -1,4 +1,4 @@
-@media (max-width: 80.625rem) {
+@media (max-width: 1290px) {
   .container {
     width: 100%;
   }
@@ -20,7 +20,7 @@
     display: none;
   }
 }
-@media (max-width: 64rem) {
+@media (max-width: 1024px) {
   #mNav {
     display: block;
   }
@@ -43,7 +43,7 @@
     display: none;
   }
 }
-@media (max-width: 60rem) {
+@media (max-width: 960px) {
   .movie .movieTitle ul {
     width: auto;
   }
@@ -62,7 +62,7 @@
     display: none;
   }
 }
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
   body {
     background-color: #d9d7e0;
   }
@@ -194,7 +194,7 @@
     display: none;
   }
 }
-@media (max-width: 37.5rem) {
+@media (max-width: 600px) {
   .slider {
     height: 25rem;
   }

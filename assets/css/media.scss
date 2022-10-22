@@ -1,6 +1,6 @@
 // 미디어쿼리
 
-@media (max-width: 80.625rem) {
+@media (max-width: 1290px) {
   .container {
     width: 100%;
   }
@@ -30,7 +30,7 @@
   }
 }
 
-@media (max-width: 64rem) {
+@media (max-width: 1024px) {
   #mNav {
     display: block;
   }
@@ -70,7 +70,7 @@
   }
 }
 
-@media (max-width: 60rem) {
+@media (max-width: 960px) {
   .movie {
     .movieTitle {
       ul {
@@ -98,7 +98,7 @@
   }
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
   body {
     background-color: #d9d7e0;
 
@@ -284,7 +284,7 @@
   }
 }
 
-@media (max-width: 37.5rem) {
+@media (max-width: 600px) {
   .slider {
     height: 25rem;
 
@@ -389,6 +389,6 @@
   }
 }
 
-@media (max-width: 30rem) {}
+@media (max-width: 480px) {}
 
-@media (max-width: 20rem) {}
+@media (max-width: 320px) {}
